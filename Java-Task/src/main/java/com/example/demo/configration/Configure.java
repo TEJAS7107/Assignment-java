@@ -57,7 +57,7 @@ public class Configure {
 				.authorizeHttpRequests((authorize) -> authorize
 						.requestMatchers("api/auth/**")
 						.permitAll()
-						.requestMatchers("api/**")
+						.requestMatchers("api/operations/**")
 						.authenticated()
 
 				).sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
